@@ -88,6 +88,11 @@ for k = 1 : length(Windows_Start)
     
 end
 
+if isempty(Windows_Start)
+    disp('Error: Window Size is longer then maximum time point')
+       Spectral_HRV = [] ;
+end
+
 
 end
 
